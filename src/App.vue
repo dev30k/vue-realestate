@@ -1,30 +1,35 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+<div v-if="this.$store.state.postLoaded">
+    <router-view />
+</div>
+
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+
+
+import {auth} from "./firebase/config";
+
+export default {
+  created() {
+    auth.onAuthStateChanged((user)=>{
+      this.$store.commit("updateUser",user);
+      if (user){
+        this.$store.dispatch("getCurrentUser");
+        console.log(this.$store.state.email);
+      }
+
+    });
+    this.$store.dispatch("getProperties")
+    this.$store.dispatch("getComments")
+   
+  }
+
+
+
+
 }
 
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>
