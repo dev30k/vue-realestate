@@ -3,7 +3,7 @@
   <nav class="relative py-6 bg-white">
     <div class="container mx-auto px-4 flex justify-between items-center">
       <a class="text-3xl font-bold leading-none" href="#">
-        <img class="h-12" src="atis-assets/logo/atis/atis-mono-black.svg" alt="" width="auto">
+        <img class="h-12" src="" alt="" width="auto">
       </a>
       <div class="lg:hidden">
         <button class="navbar-burger flex items-center text-dark1 p-3">
@@ -14,34 +14,38 @@
         </button>
       </div>
       <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Start</a></li>
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Home</a></li>
         <li class="text-gray-300">
           <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
           </svg>
         </li>
-        <li><a class="text-sm text-dark1 font-bold" href="#">About Us</a></li>
-        <li class="text-gray-300">
-          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
-          </svg>
-        </li>
-        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Services</a></li>
-        <li class="text-gray-300">
-          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
-          </svg>
-        </li>
-        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Platform</a></li>
+        <li><a class="text-sm text-dark1 font-bold" href="#">Properties</a></li>
         <li class="text-gray-300">
           <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
           </svg>
         </li>
         <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Testimonials</a></li>
+        <li class="text-gray-300">
+          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+          </svg>
+        </li>
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Gallery</a></li>
+        <li class="text-gray-300">
+          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+          </svg>
+        </li>
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">About Us</a></li>
       </ul>
-      <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-l-xl rounded-t-xl transition duration-200" href="#">Sign In</a>
-      <a class="hidden lg:inline-block py-2 px-6 bg-dark1 hover:bg-dark1 text-sm text-white font-bold rounded-l-xl rounded-t-xl transition duration-200" href="#">Sign up</a>
+      <a v-if="!user" class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-l-xl rounded-t-xl transition duration-200" href="#">Sign In</a>
+      <a v-if="!user" class="hidden lg:inline-block py-2 px-6 bg-dark1 hover:bg-dark1 text-sm text-white font-bold rounded-l-xl rounded-t-xl transition duration-200" href="#">Sign up</a>
+
+      <a v-if="user" class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-l-xl rounded-t-xl transition duration-200" href="#" @click="routetoupload">Upload</a>
+      <a v-if="user" class="hidden lg:inline-block py-2 px-6 bg-dark1 hover:bg-dark1 text-sm text-white font-bold rounded-l-xl rounded-t-xl transition duration-200" href="#" @click="signout">Sign out</a>
+      
     </div>
   </nav>
   <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
@@ -49,7 +53,7 @@
     <nav class="relative flex flex-col py-6 px-6 h-full w-full bg-white border-r overflow-y-auto">
       <div class="flex items-center mb-8">
         <a class="mr-auto text-3xl font-bold leading-none" href="#">
-          <img class="h-10" src="atis-assets/logo/atis/atis-mono-black.svg" alt="" width="auto">
+          <img class="h-10" src="" alt="" width="auto">
         </a>
         <button class="navbar-close">
           <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -59,30 +63,26 @@
       </div>
       <div>
         <ul>
-          <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-dark1 rounded" href="#">Start</a></li>
+          <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-dark1 rounded" href="#">Home</a></li>
           <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-dark1 rounded" href="#">About Us</a></li>
-          <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-dark1 rounded" href="#">Services</a></li>
+          <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-dark1 rounded" href="#">Properties</a></li>
           <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-dark1 rounded" href="#">Platform</a></li>
           <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-dark1 rounded" href="#">Testimonials</a></li>
         </ul>
       </div>
       <div class="mt-auto">
-        <div class="pt-6"><a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl" href="#">Sign in</a>
-        <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-dark2 hover:bg-dark1 rounded-l-xl rounded-t-xl" href="#">Sign Up</a></div>
+        <div class="pt-6">
+          <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl" href="#">Sign in</a>
+        <a v-if="!user" class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-dark2 hover:bg-dark1 rounded-l-xl rounded-t-xl" href="#">Sign Up</a>
+
+         <button v-if="user" class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-dark2 hover:bg-dark1 rounded-l-xl rounded-t-xl" @click="signout">Sign out</button>
+          <button v-if="user" class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-dark2 hover:bg-dark1 rounded-l-xl rounded-t-xl"  @click="routetoUpload">Upload</button>
+       
+        </div>
+       
         <p class="my-4 text-xs text-center text-gray-400">
           <span>© 2020 All rights reserved.</span>
         </p>
-        <div class="text-center">
-          <a class="inline-block px-1" href="#">
-            <img src="atis-assets/social/facebook.svg" alt="">
-          </a>
-          <a class="inline-block px-1" href="#">
-            <img src="atis-assets/social/twitter.svg" alt="">
-          </a>
-          <a class="inline-block px-1" href="#">
-            <img src="atis-assets/social/instagram.svg" alt="">
-          </a>
-        </div>
       </div>
     </nav>
   </div>
@@ -90,19 +90,28 @@
 </template>
 
 <script>
-// import {Navbars} from "./nav";
 
+import {auth} from "../../firebase/config";
 
 
 export default {
   computed: {
     user() {
       return this.$store.state.user;
+    },
+    
+  },
+  methods:{
+    routetoUpload() {
+      return this.$router.push({name:"Upload"});
 
 
+    },
+    signout() {      
+      auth.signOut(this.currentUser.uid);
     }
 
-  },
+  }
 
 
 

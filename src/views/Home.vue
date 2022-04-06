@@ -15,7 +15,7 @@
                   <span class="mb-5 font-bold font-heading">01</span>
                   <div class="mb-5 h-16 w-px bg-gray-100"></div>
                   <button class="mb-5">
-                    <img src="yofte-assets/elements/circle.svg" alt="">
+                    <img src="" alt="">
                   </button>
                   <button class="mb-6 w-1 h-1 bg-blue-500 rounded-full"></button>
                   <button class="mb-6 w-1 h-1 bg-blue-500 rounded-full"></button>
@@ -85,7 +85,7 @@
           <nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto">
             <div class="flex items-center mb-8">
               <a class="mr-auto text-3xl font-bold font-heading" href="#">
-                <img class="h-9" src="yofte-assets/logos/yofte-logo.svg" alt="" width="auto">
+                <img class="h-9" src="../assets/logo.svg" alt="" width="auto">
               </a>
               <button class="navbar-close">
                 <svg class="h-2 w-2 text-gray-500 cursor-pointer" width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -142,7 +142,7 @@
         
       <section class="py-20 bg-gray-100">
         <div class="container mx-auto px-4">
-          <h2 class="mb-16 md:mb-24 text-4xl md:text-5xl font-bold font-heading text-center">Find your home is as easy as 1,2,3</h2>
+          <h2 class="mb-16 md:mb-24 text-4xl md:text-5xl font-bold font-heading text-center">Finding your home is as easy as 1,2,3</h2>
           <div class="flex flex-wrap -mx-3 justify-evenly">
             <div class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6 lg:mb-0">
               <div class="relative h-full text-center pt-16 bg-white">

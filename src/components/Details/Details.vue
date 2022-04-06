@@ -11,17 +11,12 @@
       </div>
       <div class="w-full lg:w-auto px-4 flex flex-wrap items-center">
         <div class="w-full sm:w-auto mb-4 sm:mb-0 mr-5">
-          <select class="pl-8 py-4 bg-white text-lg border border-gray-200 focus:ring-blue-300 focus:border-blue-300 rounded-md" name="" id="">
-            <option value="1">Sort by newest</option>
+          <select class="pl-8 py-4 px-4 bg-white text-lg border border-gray-200 focus:ring-blue-300 focus:border-blue-300 rounded-md" name="" id="">
+            <option value="1">Sort by latest</option>
             <option value="2">Sort by price</option>
           </select>
         </div>
-        <a class="inline-block mr-3 h-full p-4 bg-white rounded-md border" href="#">
-          <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="4" height="4" rx="2" fill="#2B51C6"></rect><rect x="8" width="4" height="4" rx="2" fill="#2B51C6"></rect><rect x="16" width="4" height="4" rx="2" fill="#2B51C6"></rect><rect y="10" width="4" height="4" rx="2" fill="#2B51C6"></rect><rect x="8" y="10" width="4" height="4" rx="2" fill="#2B51C6"></rect><rect x="16" y="10" width="4" height="4" rx="2" fill="#2B51C6"></rect><rect y="20" width="4" height="4" rx="2" fill="#2B51C6"></rect><rect x="8" y="20" width="4" height="4" rx="2" fill="#2B51C6"></rect><rect x="16" y="20" width="4" height="4" rx="2" fill="#2B51C6"></rect></svg>
-        </a>
-        <a class="inline-block h-full p-4 hover:bg-white border rounded-md group" href="#">
-          <svg class="text-gray-200 group-hover:text-blue-300" width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="4" height="4" rx="2" fill="currentColor"></rect><rect x="8" width="4" height="4" rx="2" fill="currentColor"></rect><rect x="16" width="4" height="4" rx="2" fill="currentColor"></rect><rect x="24" width="4" height="4" rx="2" fill="currentColor"></rect><rect y="10" width="4" height="4" rx="2" fill="currentColor"></rect><rect x="8" y="10" width="4" height="4" rx="2" fill="currentColor"></rect><rect x="16" y="10" width="4" height="4" rx="2" fill="currentColor"></rect><rect x="24" y="10" width="4" height="4" rx="2" fill="currentColor"></rect><rect y="20" width="4" height="4" rx="2" fill="currentColor"></rect><rect x="8" y="20" width="4" height="4" rx="2" fill="currentColor"></rect><rect x="16" y="20" width="4" height="4" rx="2" fill="currentColor"></rect><rect x="24" y="20" width="4" height="4" rx="2" fill="currentColor"></rect></svg>
-        </a>
+       
       </div>
     </div>
     <div class="flex flex-wrap -mx-3 mb-24">
@@ -31,7 +26,7 @@
             <div class="py-6 px-2 text-center bg-gray-50">
               <a class="font-bold font-heading" href="#">Category</a>
               <ul class="hidden text-left mt-6">
-                <li class="mb-4"><a href="#">New in</a></li>
+                <li class="mb-4"><a href="#">Condo</a></li>
                 <li class="mb-4"><a href="#">Activewear</a></li>
                 <li class="mb-4"><a href="#">Hoodies &amp; Sweatshirts</a></li>
                 <li class="mb-4"><a href="#">Jackets</a></li>
@@ -44,7 +39,7 @@
             </div>
           </div>
          
-          <div class="w-1/2 md:w-1/3 px-2 mb-4">
+          <!-- <div class="w-1/2 md:w-1/3 px-2 mb-4">
             <div class="py-6 px-4 text-center bg-gray-50">
               <a class="font-bold font-heading" href="#">Price</a>
               <div class="hidden mt-6">
@@ -55,9 +50,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           
-          <div class="w-1/2 md:w-1/3 px-2 mb-4">
+          <!-- <div class="w-1/2 md:w-1/3 px-2 mb-4">
             <div class="py-6 px-4 text-center bg-gray-50">
               <a class="font-bold font-heading" href="#">Location</a>
               <div class="hidden mt-6">
@@ -71,7 +66,7 @@
                 </label>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="w-1/2 md:w-1/3 px-2 mb-4">
             <div class="py-6 px-4 text-center bg-gray-50">
               <a class="font-bold font-heading" href="#">Location</a>
@@ -84,7 +79,9 @@
         <div class="mb-6 py-10 px-12 bg-gray-50">
           <h3 class="mb-8 text-2xl font-bold font-heading">Category</h3>
           <ul>
-            <li class="mb-4"><a class="text-lg" href="#">New in</a></li>
+            <li class="mb-4"><a class="text-lg" href="#">Apartment</a></li>
+              <li class="mb-4"><a class="text-lg" href="#">Condo</a></li>
+                <li class="mb-4"><a class="text-lg" href="#">Bungalow</a></li>
            
           </ul>
         </div>
@@ -94,12 +91,12 @@
           <div>
             <input class="w-full mb-4 outline-none appearance-none bg-gray-100 h-1 rounded cursor-pointer" type="range" min="1" max="100" value="50">
             <div class="flex justify-between">
-              <span class="inline-block text-lg font-bold font-heading text-blue-300">$0</span>
-              <span class="inline-block text-lg font-bold font-heading text-blue-300">$289</span>
+              <span class="inline-block text-lg font-bold font-heading text-dark2">$10000</span>
+              <span class="inline-block text-lg font-bold font-heading text-dark1">$289000</span>
             </div>
           </div>
         </div>
-        <div class="mb-6 py-12 pl-12 pr-6 bg-gray-50">
+        <!-- <div class="mb-6 py-12 pl-12 pr-6 bg-gray-50">
           <h3 class="mb-8 text-2xl font-bold font-heading">Size</h3>
           <div class="flex flex-wrap -mx-2 -mb-2">
             <button class="mb-2 mr-1 w-16 py-1 border hover:border-gray-400 rounded-md">36</button>
@@ -118,16 +115,16 @@
               </svg>
             </a>
           </div>
-        </div>
+        </div> -->
         <div class="mb-6 py-10 px-12 bg-gray-50">
           <h3 class="mb-6 text-2xl font-bold font-heading">Location</h3>
           <label class="flex mb-3 items-center text-lg">
             <input type="checkbox">
-            <span class="ml-2">Standard</span>
+            <span class="ml-2">Nairobi</span>
           </label>
           <label class="flex items-center text-lg">
             <input type="checkbox">
-            <span class="ml-2">Next day (yes!)</span>
+            <span class="ml-2">Nakuru</span>
           </label>
         </div>
         <div class="mb-6 py-10 px-12 bg-gray-50">
@@ -136,31 +133,13 @@
         </div>
       </div>
 
-       <div class="ui icon input" style="width: 100%">
-    <input type="text" placeholder="Search..." v-model="searchQuery" />
-    <i class="search icon"></i>
-  </div>
-    <div
-      class="card ui fluid"
-      v-for="property in searchedProducts"
-      :key="property.id"
-      style="margin: 0"
-    >
-      <div class="content mb">
-        <!-- <img class="right floated mini ui image" :src="property.images" /> -->
-
-        <div class="header">{{ property.location }}</div>
-        <div class="meta">
-          {{ property.price }} 
-        </div>
-      </div>
-    </div>
-      <div class="w-full lg:w-3/4 px-3">
+ 
+  <div class="w-full lg:w-3/4 px-3">
         <div class="flex flex-wrap -mx-3">  
           
            <Details :details="details" v-for="(details,index) in featuredDetails " :key="index"/>
        
-      </div>
+  </div>
     </div>
     <div class="text-center">
       <a class="inline-block bg-orange-300 hover:bg-orange-400 text-white font-bold font-heading py-6 px-8 rounded-md uppercase" href="#">Show More</a>

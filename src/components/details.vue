@@ -3,7 +3,7 @@
         <div class="flex flex-wrap -mx-4"> -->
           <router-link class="w-full md:w-1/2 lg:w-2/5 px-3 mb-6 lg:mb-10"  :class="{'no-user':!user}" :to="{name:'propertyinfo',params:{propertyId:this.details.propertyId}}">
               <div class="relative h-full bg-gray-50">
-                <span class="absolute top-0 left-0 ml-6 mt-6 px-2 py-1 text-xs font-bold font-heading bg-white border-2 border-red-500 rounded-full text-red-500">For rent </span>
+                <span class="absolute top-0 left-0 ml-6 mt-6 px-2 py-1 text-xs font-bold font-heading bg-white border-2 border-gray rounded-full text-gray">For Sale </span>
                 <a class="block" href="#">
                   <img class="w-full h-64 object-cover" :src="details.images" alt="">
                 </a>

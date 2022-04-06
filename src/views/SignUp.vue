@@ -40,7 +40,7 @@
        <button class="flex mb-6 items-center justify-center px-6 py-3 w-full text-center text-black font-bold border border-gray-200 hover:border-gray-300" @click.prevent="register">
           <!-- <img class="mr-3" src="../assets/google.svg" alt="" data-config-id="auto-img-1">
           <span data-config-id="secondary-action">Sign Up with Google</span> -->
-          signup with google
+          Register
         </button>
         <p class="text-xs text-center">
           <span data-config-id="extra">Already have have an account?</span>

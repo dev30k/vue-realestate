@@ -1,7 +1,7 @@
 <template>
   <router-link class="w-full md:w-1/2 lg:w-1/4 px-3 mb-6 lg:mb-0" :class="{'no-user':!user}" :to="{name:'propertyinfo',params:{propertyId:this.property.propertyId}}">
     <div class="relative h-full bg-gray-50">
-      <span class="absolute top-0 left-0 ml-6 mt-6 px-2 py-1 text-xs font-bold font-heading bg-white border-2 border-red-500 rounded-full text-red-500">For rent </span>
+      <span class="absolute top-0 left-0 ml-6 mt-6 px-2 py-1 text-xs font-bold font-heading bg-white border-2 border-gray rounded-full text-gray">For rent </span>
       <a class="block" href="#">
         <img class="w-full h-64 object-cover" :src="property.images" alt="">
       </a>
@@ -11,7 +11,7 @@
             <span>{{property.price}}</span>
 
           </p>
-          <h3 class="mb-2 text-xl font-bold font-heading hover:text-blue-600" >
+          <h3 class="mb-2 text-xl font-bold font-heading hover:text-dark1" >
             {{ property.propertyName }}</h3>
           <span class="text-xs flex text-right   text-gray-500  font-semibold font-heading">
                       <img class="px-0" src="../assets/locations.svg" alt="">

@@ -15,7 +15,7 @@
       <div class="pb-12 flex flex-wrap items-center justify-between border-b border-gray-100">
         <div class="w-full lg:w-1/5 mb-12 lg:mb-4">
           <a class="inline-block text-3xl font-bold leading-none" href="#">
-            <img class="h-12" src="atis-assets/logo/atis/atis-mono-black.svg" alt="" width="auto">
+            <img class="h-12" src="" alt="" width="auto">
           </a>
         </div>
         <div class="w-full lg:w-auto">

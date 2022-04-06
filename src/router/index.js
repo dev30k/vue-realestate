@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/Home.vue";
-// import firebase from "firebase";
+import firebase from "firebase";
 
 const routes = [{
         path: "/",
@@ -72,21 +72,21 @@ const router = createRouter({
     routes,
 });
 
-// router.beforeEach((to, from, next) => {
-//     if (to.matched.some(record => record.meta.authRequired)) {
-//         if (firebase.auth().currentUser) {
-//             next();
-//         } else {
-//             next({
+router.beforeEach((to, from, next) => {
+    if (to.matched.some(record => record.meta.authRequired)) {
+        if (firebase.auth().currentUser) {
+            next();
+        } else {
+            next({
 
-//                 path: '/'
+                path: '/'
 
-//             })
-//         }
+            })
+        }
 
-//     } else {
-//         next();
-//     }
-// });
+    } else {
+        next();
+    }
+});
 
 export default router;

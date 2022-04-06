@@ -46,21 +46,7 @@
               <span class="text-gray-500">Uploaded on: {{this.currentProperty[0].uploadedOn.toDate().toDateString()}}</span>
               <h2 class="mt-2 mb-2 max-w-xl text-2xl md:text-2xl font-bold font-heading">{{ this.currentProperty[0].propertyName}}</h2>
               <div class="mb-8">
-                <button>
-                  <img src="yofte-assets/elements/star-gold.svg" alt="">
-                </button>
-                <button>
-                  <img src="yofte-assets/elements/star-gold.svg" alt="">
-                </button>
-                <button>
-                  <img src="yofte-assets/elements/star-gold.svg" alt="">
-                </button>
-                <button>
-                  <img src="yofte-assets/elements/star-gold.svg" alt="">
-                </button>
-                <button>
-                  <img src="yofte-assets/elements/star-gray.svg" alt="">
-                </button>
+             
               </div>
               <p class="inline-block mb-8 text-2xl font-bold font-heading text-dark1">
                 <span>${{this.currentProperty[0].price}}</span>
@@ -90,7 +76,7 @@
               </div> -->
               <div>
     <router-link to="/checkout" class="bg-dark2 text-white active:bg-pink-600 my-4 mt-4 font-bold uppercase text-sm px-4 mb-5 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-      Proceed to Payment
+      Request a quote
     </router-link>
 
   </div>
